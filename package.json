@@ -5,11 +5,18 @@
   "main": "public/electron.js",
   "author": "eBitvn",
   "dependencies": {
+    "@skidding/react-codemirror": "^1.0.2",
     "electron-is-dev": "^1.0.1",
+    "markdown-it": "^8.4.2",
+    "markdown-it-mathjax": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-katex": "^2.0.2",
-    "react-scripts": "2.0.5"
+    "react-latex": "^1.2.0",
+    "react-mathjax": "^1.0.1",
+    "react-scripts": "2.0.5",
+    "react-split-pane": "^0.1.84",
+    "react-tex": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

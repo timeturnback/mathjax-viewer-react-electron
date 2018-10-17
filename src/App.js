@@ -1,35 +1,40 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { Context, Node } from 'react-mathjax';
-import { BlockMath } from 'react-katex';
+import SplitPane from 'react-split-pane';
 import 'katex/dist/katex.min.css';
+import { BlockMath, InlineMath } from 'react-katex';
+import Editor from './editor.js';
+import MathJax from 'react-mathjax'
+import Latex from 'react-latex';
+import {InlineTex} from 'react-tex';
 import './App.css';
-
-const ascii = 'U = 1/(R_(si) + sum_(i=1)^n(s_n/lambda_n) + R_(se))';
-const tex = `f(x) = \\int_{-\\infty}^\\infty\\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\\,d\\xi`;
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super();
     this.state = {
-      value: `\\int_0^\\infty x^2 dx`,
-    };
+      markdownSrc: `Phương trình $x^4-2x^2-3+m=0$ có $4$ nghiệm phân biệt khi và chỉ khi`,
+    }
   }
 
-  handleChange = (event) => {
-    this.setState({value: event.target.value});
+  onMarkdownChange = (md) => {
+    this.setState({
+      markdownSrc: md
+    });
   }
 
   render() {
+    let latexString = `Tìm $m$ đề hàm số $y=\\dfrac{mx+3}{2x-m}$ đồng biến trên $(0;+\\infty)$`;
     return (
-      <div >
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Math :
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-        </form>
-        <BlockMath math={this.state.value}/>
+      <div className="App">
+        <SplitPane split="vertical" defaultSize="50%">
+          <div className="editor-pane">
+            <Editor className="editor" value={this.state.markdownSrc} onChange={this.onMarkdownChange}/>
+          </div>
+          <div className="view-pane">
+            <Latex>{this.state.markdownSrc}</Latex>
+          </div>
+        </SplitPane>
       </div>
     );
   }

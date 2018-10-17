@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import SplitPane from 'react-split-pane';
-import 'katex/dist/katex.min.css';
-import { BlockMath, InlineMath } from 'react-katex';
 import Editor from './editor.js';
-import MathJax from 'react-mathjax'
 import Latex from 'react-latex';
-import {InlineTex} from 'react-tex';
 import './App.css';
 
 class App extends Component {

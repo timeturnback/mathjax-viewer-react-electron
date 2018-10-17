@@ -1171,11 +1171,6 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-1.0.0.tgz#cb102df1c56f5123eab8b67cd7b98027a0279178"
-  integrity sha1-yxAt8cVvUSPquLZ817mAJ6AnkXg=
-
 anymatch@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-2.0.0.tgz#bcb24b4f37934d9aa7ac17b4adaf89e7c76ef2eb"
@@ -2235,15 +2230,6 @@ chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
-
-chalk@~0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-0.4.0.tgz#5199a3ddcd0c1efe23bc08c1b027b06176e0c64f"
-  integrity sha1-UZmj3c0MHv4jvAjBsCewYXbgxk8=
-  dependencies:
-    ansi-styles "~1.0.0"
-    has-color "~0.1.0"
-    strip-ansi "~0.1.0"
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -4036,7 +4022,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -4612,11 +4598,6 @@ has-ansi@^2.0.0:
   integrity sha1-NPUEnOHs3ysGSa8+8k5F7TVBbZE=
   dependencies:
     ansi-regex "^2.0.0"
-
-has-color@~0.1.0:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/has-color/-/has-color-0.1.7.tgz#67144a5260c34fc3cca677d041daf52fe7b78b2f"
-  integrity sha1-ZxRKUmDDT8PMpnfQQdr1L+e3iy8=
 
 has-flag@^1.0.0:
   version "1.0.0"
@@ -6084,14 +6065,6 @@ jsx-ast-utils@^2.0.1:
   dependencies:
     array-includes "^3.0.3"
 
-katex@0.10.0-alpha:
-  version "0.10.0-alpha"
-  resolved "https://registry.yarnpkg.com/katex/-/katex-0.10.0-alpha.tgz#0b31086ffb7fedf4eb408a630d35cf6d198f2809"
-  integrity sha512-zxBALe11/a5T4Va0ybBSavE+dGe7YNR3MWom1avhmRtvoeI5QSHMuHhDbsLOcazdMCjFHIZTJpUpsllnFo9JVA==
-  dependencies:
-    match-at "^0.1.1"
-    nomnom "^1.8.1"
-
 katex@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/katex/-/katex-0.9.0.tgz#26a7d082c21d53725422d2d71da9b2d8455fbd4a"
@@ -6229,11 +6202,6 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
-
-load-script@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
-  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
 
 loader-fs-cache@^1.0.0:
   version "1.0.1"
@@ -6896,14 +6864,6 @@ node-releases@^1.0.0-alpha.11, node-releases@^1.0.0-alpha.14:
   integrity sha512-G8nnF9cP9QPP/jUmYWw/uUUhumHmkm+X/EarCugYFjYm2uXRMFeOD6CVT3RLdoyCvDUNy51nirGfUItKWs/S1g==
   dependencies:
     semver "^5.3.0"
-
-nomnom@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/nomnom/-/nomnom-1.8.1.tgz#2151f722472ba79e50a76fc125bb8c8f2e4dc2a7"
-  integrity sha1-IVH3Ikcrp55Qp2/BJbuMjy5Nwqc=
-  dependencies:
-    chalk "~0.4.0"
-    underscore "~1.6.0"
 
 nopt@^4.0.1:
   version "4.0.1"
@@ -8261,7 +8221,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==
@@ -8464,16 +8424,6 @@ react-dev-utils@^6.0.5:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@16.4.0:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
-  integrity sha512-bbLd+HYpBEnYoNyxDe9XpSG2t9wypMohwQPvKw8Hov3nF7SJiJIgK56b46zHpBUpHb06a1iEuw7G3rbrsnNL6w==
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-
 react-dom@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
@@ -8489,13 +8439,6 @@ react-error-overlay@^5.0.5:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.0.5.tgz#716ff1a92fda76bb89a39adf9ce046a5d740e71a"
   integrity sha512-ab0HWBgxdIsngHtMGU8+8gYFdTBXpUGd4AE4lN2VZvOIlBmWx9dtaWEViihuGSIGosCKPeHCnzFoRWB42UtnLg==
 
-react-katex@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-katex/-/react-katex-2.0.2.tgz#0cb9559a4f30cb18f808006922b116c06e8b0ae9"
-  integrity sha512-mk1ezfUF4mBIstjvpfELf9g1rWF1Y1+idXMiOvkFvCLi0JFZDCQdui59VqQcI2ynOpb0jj52TM4kyBjKG+qEBg==
-  dependencies:
-    katex "^0.9.0"
-
 react-latex@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-latex/-/react-latex-1.2.0.tgz#e6468657caf71fbed56d7b87cc34174454e730d7"
@@ -8507,13 +8450,6 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-mathjax@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-mathjax/-/react-mathjax-1.0.1.tgz#a8c282e75d277a201632dfd07edf41edda372b4b"
-  integrity sha512-+mjFcciZY3GQoqiQm3aRTyDjgBKuoaXpY+SCONX00jScuPpTKwnASeFMS5+pbTIzDf5zPT2Y9ZZfQ9U/d4CKtQ==
-  dependencies:
-    load-script "^1.0.0"
 
 react-scripts@2.0.5:
   version "2.0.5"
@@ -8585,25 +8521,6 @@ react-style-proptype@^3.0.0:
   integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
   dependencies:
     prop-types "^15.5.4"
-
-react-tex@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/react-tex/-/react-tex-1.4.0.tgz#2f2daa602a8866d52f58ecfd04417796cdbb1f18"
-  integrity sha512-cLBcm8yLVKuQFGFgq41uw03AuFL/HTDdy0jTUZ6qpo3P2r2qWOBn0an8kK+Y0Ew5U4B0VmMcCXi2U01Md9TGng==
-  dependencies:
-    katex "0.10.0-alpha"
-    react "16.4.0"
-    react-dom "16.4.0"
-
-react@16.4.0:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
-  integrity sha512-K0UrkLXSAekf5nJu89obKUM7o2vc6MMN9LYoKnCa+c+8MJRAT120xzPLENcWSRc7GYKIg0LlgJRDorrufdglQQ==
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
 
 react@^16.5.2:
   version "16.5.2"
@@ -9692,11 +9609,6 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   dependencies:
     ansi-regex "^2.0.0"
 
-strip-ansi@~0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-0.1.1.tgz#39e8a98d044d150660abe4a6808acf70bb7bc991"
-  integrity sha1-OeipjQRNFQZgq+SmgIrPcLt7yZE=
-
 strip-bom@3.0.0, strip-bom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
@@ -10137,11 +10049,6 @@ uglifyjs-webpack-plugin@^1.2.4:
     uglify-es "^3.3.4"
     webpack-sources "^1.1.0"
     worker-farm "^1.5.2"
-
-underscore@~1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
-  integrity sha1-izixDKze9jM3uLJOT/htRa6lKag=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

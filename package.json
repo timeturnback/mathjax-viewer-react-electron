@@ -7,10 +7,12 @@
   "dependencies": {
     "@skidding/react-codemirror": "^1.0.2",
     "electron-is-dev": "^1.0.1",
+    "electron-packager": "^12.2.0",
     "markdown-it": "^8.4.2",
     "markdown-it-mathjax": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-katex": "^2.0.2",
     "react-latex": "^1.2.0",
     "react-scripts": "2.0.5",
     "react-split-pane": "^0.1.84"
@@ -21,8 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-pack": "build - em.main=build/electron.js",
-    "build-window": "build --win - em.main=build/electron.js",
+    "electron-pack": "build - em.main=public/electron.js",
+    "build-window": "build --win - em.main=public/electron.js",
     "preelectron-pack": "yarn build"
   },
   "eslintConfig": {
@@ -51,7 +53,11 @@
       "buildResources": "assets"
     },
     "win": {
-      "target": "NSIS"
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick":false,
+      "allowToChangeInstallationDirectory": true
     }
   }
 }

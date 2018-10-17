@@ -2,16 +2,30 @@
   "name": "mathjax-viewer",
   "version": "0.1.0",
   "private": true,
+  "main": "public/electron.js",
+  "author": "eBitvn",
   "dependencies": {
+    "@skidding/react-codemirror": "^1.0.2",
+    "electron-is-dev": "^1.0.1",
+    "electron-packager": "^12.2.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-mathjax": "^2.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.5"
+    "react-katex": "^2.0.2",
+    "react-latex": "^1.2.0",
+    "react-scripts": "2.0.5",
+    "react-split-pane": "^0.1.84"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "build - em.main=public/electron.js",
+    "build-window": "build --win - em.main=public/electron.js",
+    "preelectron-pack": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +35,29 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4",
+    "wait-on": "^3.1.0"
+  },
+  "homepage": "./",
+  "build": {
+    "appId": "ebitvn.development.mathjaxviewer",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick":false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
 }
